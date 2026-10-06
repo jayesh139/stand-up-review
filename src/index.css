@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --ink: #12232e;
+  --ink-soft: #3a5563;
+  --paper: #f3f7f5;
+  --paper-deep: #e4eeea;
+  --accent: #0d8f7a;
+  --accent-deep: #067060;
+  --accent-glow: rgba(13, 143, 122, 0.18);
+  --line: rgba(18, 35, 46, 0.1);
+  --shadow: 0 18px 40px rgba(18, 35, 46, 0.08);
+  --radius: 18px;
+  --font-display: 'Bricolage Grotesque', Georgia, serif;
+  --font-body: 'Figtree', system-ui, sans-serif;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background:
+    radial-gradient(ellipse 80% 55% at 12% -10%, #b8e4d8 0%, transparent 55%),
+    radial-gradient(ellipse 70% 50% at 95% 5%, #d4e8f0 0%, transparent 50%),
+    radial-gradient(ellipse 60% 40% at 50% 100%, #cfe8df 0%, transparent 55%),
+    linear-gradient(165deg, #f7fbf9 0%, var(--paper) 45%, #eef4f1 100%);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
